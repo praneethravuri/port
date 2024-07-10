@@ -15,7 +15,10 @@ const config: Config = {
       },
       colors : {
         "text-primary" : "#BFFF00"
-      }
+      },
+      animation: {
+        'spin-slow': 'spin 10s linear infinite',
+      },
     },
   },
   plugins: [],

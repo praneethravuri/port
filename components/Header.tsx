@@ -1,9 +1,10 @@
 "use client";
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
+
 
 const Header = () => {
   const teluguLetters = 'అఆఇఈఉఊఋఌఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరలవశషసహళక్షజ్ఞ';
-
+  
   const generateRandomLetters = useCallback(() => {
     let result = '';
     for (let i = 0; i < 1000; i++) {
@@ -12,7 +13,11 @@ const Header = () => {
     return result;
   }, []);
 
-  const [letters, setLetters] = useState(generateRandomLetters());
+  const [letters, setLetters] = useState('');
+
+  useEffect(() => {
+    setLetters(generateRandomLetters());
+  }, [generateRandomLetters]);
 
   const changeLetters = useCallback(() => {
     setLetters(generateRandomLetters());
@@ -20,7 +25,7 @@ const Header = () => {
 
   return (
     <div
-      className='relative flex items-center justify-center lg:justify-start h-full p-2 overflow-hidden cursor-default'
+      className='relative flex items-center justify-center lg:justify-start h-full p-2 overflow-hidden'
       onMouseEnter={changeLetters}
       onMouseMove={changeLetters}
     >

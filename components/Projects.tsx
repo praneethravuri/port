@@ -11,7 +11,7 @@ type ProjectItemProps = {
 
 const ProjectItem: React.FC<ProjectItemProps> = ({ title, description, gitHubLink, tags }) => {
   return (
-    <Link href={gitHubLink} passHref className='group'>
+    <Link href={gitHubLink} passHref className='group py-4' target='_blank' >
         <div className="mb-4">
           <h2 className="text-2xl font-bold mb-2 flex justify-between">
             <div className="title transition duration-300 ease-in-out group-hover:text-text-primary sm:text-xl text-base">{title}</div>
@@ -45,7 +45,7 @@ const Projects = () => {
       <div className="title">
         <p className="sm:text-4xl text-2xl font-bold text-text-primary">Projects</p>
       </div>
-      <div className="mt-4">
+      <div className="py-4">
         {projects.map((project, index) => (
           <ProjectItem
             key={index}
