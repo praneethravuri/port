@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const EducationItem = ({ college, duration, location, degree }) => {
+const EducationItem = ({ college, duration, location, degree } : {college : string, duration: string, location: string, degree: string}) => {
   return (
     <div className="py-8">
       <h2 className="sm:text-xl text-base font-bold">{college}</h2>

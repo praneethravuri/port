@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const ExperienceItem = ({ company, duration, location, description }) => {
+const ExperienceItem = ({ company, duration, location, description } : {company: string, duration: string, location: string, description: string}) => {
   return (
     <div className="py-8">
       <h2 className="sm:text-xl text-base font-bold">{company}</h2>

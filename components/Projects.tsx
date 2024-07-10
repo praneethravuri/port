@@ -1,27 +1,33 @@
 import React from 'react';
-import { FiArrowUpRight } from "react-icons/fi";
 import Link from 'next/link';
+import { FiArrowUpRight } from "react-icons/fi";
 
-// ProjectItem component to display individual project details
-const ProjectItem = ({ title, description, gitHubLink, tags }) => {
+type ProjectItemProps = {
+  title: string;
+  description: string;
+  gitHubLink: string;
+  tags: string[];
+};
+
+const ProjectItem: React.FC<ProjectItemProps> = ({ title, description, gitHubLink, tags }) => {
   return (
-    <Link href={gitHubLink} target="_blank" rel="noopener noreferrer" className="block py-4">
-      <div className="mb-4">
-        <h2 className="text-2xl font-bold mb-2 flex justify-between">
-          <div className="title">{title}</div>
-          <div className="arrow">
-            <FiArrowUpRight />
+    <Link href={gitHubLink} passHref>
+        <div className="mb-4">
+          <h2 className="text-2xl font-bold mb-2 flex justify-between">
+            <div className="title">{title}</div>
+            <div className="arrow">
+              <FiArrowUpRight />
+            </div>
+          </h2>
+          <p className="mb-2 sm:text-xl text-base">{description}</p>
+          <div className="flex flex-wrap space-x-2">
+            {tags.map((tag, index) => (
+              <span key={index} className="text-sm text-gray-500">
+                {tag}
+              </span>
+            ))}
           </div>
-        </h2>
-        <p className="mb-2 sm:text-xl text-base">{description}</p>
-        <div className="flex flex-wrap space-x-2">
-          {tags.map((tag, index) => (
-            <span key={index} className="text-sm text-gray-500">
-              {tag}
-            </span>
-          ))}
         </div>
-      </div>
     </Link>
   );
 };
