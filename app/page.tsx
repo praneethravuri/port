@@ -10,7 +10,7 @@ import TextSlider from "@/components/TextSlider";
 
 export default function Home() {
   return (
-    <main className="grain-effect lg:h-screen p-5 lg:overflow-hidden">
+    <main className="grain-effect lg:h-screen sm:p-5 lg:overflow-hidden">
       <div className="border-2 border-white h-full lg:flex lg:justify-between space-y-8 lg:space-y-0">
         <div className="lg:w-1/2 w-full border-r-2 border-white flex flex-col justify-between">
           <div className="header border-b-2 border-white h-1/4">

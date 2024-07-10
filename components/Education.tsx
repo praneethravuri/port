@@ -3,7 +3,7 @@ import React from 'react';
 
 const EducationItem = ({ college, duration, location, degree } : {college : string, duration: string, location: string, degree: string}) => {
   return (
-    <div className="py-8">
+    <div className="py-4">
       <h2 className="sm:text-xl text-base font-bold">{college}</h2>
       <p className="sm:text-xl text-base text-gray-500">{duration} - {location}</p>
       <p className="mt-2 sm:text-xl text-base">{degree}</p>
@@ -18,7 +18,7 @@ const Education = () => {
       <div className="title">
         <p className="sm:text-4xl text-2xl font-bold text-text-primary">Education</p>
       </div>
-      <div className="mt-4">
+      <div className="">
         <EducationItem
           college="George Mason University"
           duration="2022 - 2024"

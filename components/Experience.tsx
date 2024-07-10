@@ -3,7 +3,7 @@ import React from 'react';
 
 const ExperienceItem = ({ company, duration, location, description } : {company: string, duration: string, location: string, description: string}) => {
   return (
-    <div className="py-8">
+    <div className="py-4">
       <h2 className="sm:text-xl text-base font-bold">{company}</h2>
       <p className="sm:text-xl text-base text-gray-500">{duration} - {location}</p>
       <p className="mt-2 sm:text-xl text-base">{description}</p>
@@ -18,7 +18,7 @@ const Experience = () => {
       <div className="title">
         <p className="sm:text-4xl text-2xl font-bold text-text-primary">Experience</p>
       </div>
-      <div className="mt-4">
+      <div className="">
         <ExperienceItem
           company="Software Development Intern - Cognizant"
           duration="Jan 2022 - Jun 2022"

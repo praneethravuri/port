@@ -14,7 +14,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title, description, gitHubLin
     <Link href={gitHubLink} passHref className='group'>
         <div className="mb-4">
           <h2 className="text-2xl font-bold mb-2 flex justify-between">
-            <div className="title transition duration-300 ease-in-out group-hover:text-text-primary">{title}</div>
+            <div className="title transition duration-300 ease-in-out group-hover:text-text-primary sm:text-xl text-base">{title}</div>
             <div className="arrow">
               <FiArrowUpRight className='transition duration-300 ease-in-out group-hover:text-text-primary' />
             </div>
