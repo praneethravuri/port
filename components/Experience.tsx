@@ -16,7 +16,7 @@ const Experience = () => {
   return (
     <div className="border-b-2 border-white p-2">
       <div className="title">
-        <p className="sm:text-4xl text-2xl font-bold">Experience</p>
+        <p className="sm:text-4xl text-2xl font-bold text-text-primary">Experience</p>
       </div>
       <div className="mt-4">
         <ExperienceItem

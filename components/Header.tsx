@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback } from 'react';
 
 const Header = () => {
   const teluguLetters = 'అఆఇఈఉఊఋఌఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరలవశషసహళక్షజ్ఞ';
@@ -24,11 +24,11 @@ const Header = () => {
       onMouseEnter={changeLetters}
       onMouseMove={changeLetters}
     >
-      <h1 className='text-5xl md:text-7xl font-bold text-center lg:text-left z-10'>
+      <h1 className='text-5xl md:text-7xl font-bold text-center lg:text-left z-10 text-text-primary'>
         PRANEETH RAVURI
       </h1>
       <div
-        className='absolute top-0 left-0 w-full h-full opacity-15'
+        className='absolute top-0 left-0 w-full h-full opacity-20'
         style={{
           fontSize: '24px',
           lineHeight: '1',
@@ -39,7 +39,7 @@ const Header = () => {
         <p className='tracking-widest'>{letters}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

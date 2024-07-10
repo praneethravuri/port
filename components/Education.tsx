@@ -16,7 +16,7 @@ const Education = () => {
   return (
     <div className="border-b-2 border-white p-2">
       <div className="title">
-        <p className="sm:text-4xl text-2xl font-bold">Education</p>
+        <p className="sm:text-4xl text-2xl font-bold text-text-primary">Education</p>
       </div>
       <div className="mt-4">
         <EducationItem

@@ -25,7 +25,7 @@ const slides = [
 const TextSlider = () => {
     const duplicatedSlides = [...slides, ...slides];
     return (
-        <div className="relative w-full overflow-hidden p-4 mx-auto hidden sm:block border-b-2 border-white" style={{ width: "100%" }}>
+        <div className="relative w-full overflow-hidden p-4 mx-auto hidden sm:block border-b-2 border-white bg-text-primary" style={{ width: "100%" }}>
             <div className="absolute inset-0 z-20 before:absolute before:left-0 before:top-0 before:w-1/4 before:h-full before:bg-gradient-to-r  before:to-transparent before:filter before:blur-3 after:absolute after:right-0 after:top-0 after:w-1/4 after:h-full after:bg-gradient-to-l  after:to-transparent after:filter after:blur-3"></div>
             <motion.div
                 className="flex"
@@ -42,7 +42,7 @@ const TextSlider = () => {
                     <div key={index} className="flex-shrink-0" style={{ width: `${100 / slides.length}%` }}>
                         <div className="flex items-center justify-center h-full">
                             {React.cloneElement(slide.icon, { 
-                                className: "text-3xl sm:mr-5 sm:text-xl md:text-xl lg:text-xl text-hunter/50" 
+                                className: "text-3xl sm:mr-5 sm:text-xl md:text-xl lg:text-xl text-black" 
                             })}
                         </div>
                     </div>

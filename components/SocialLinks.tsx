@@ -14,7 +14,7 @@ const SocialLinks = () => {
                     <GrLinkedin className="text-4xl" />
                 </Link>
             </div>
-            <div className="flex items-center justify-center h-full w-full sm:w-auto sm:ml-4 mt-4 sm:mt-0">
+            <div className="flex items-center justify-center h-full w-full">
                 <Link 
                     href="https://drive.google.com/file/d/1f2JMA1AWkstHzQg94QZNgl9sE4fgB9VH/view?usp=sharing" 
                     target='_blank' 

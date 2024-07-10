@@ -11,18 +11,18 @@ type ProjectItemProps = {
 
 const ProjectItem: React.FC<ProjectItemProps> = ({ title, description, gitHubLink, tags }) => {
   return (
-    <Link href={gitHubLink} passHref>
+    <Link href={gitHubLink} passHref className='group'>
         <div className="mb-4">
           <h2 className="text-2xl font-bold mb-2 flex justify-between">
-            <div className="title">{title}</div>
+            <div className="title transition duration-300 ease-in-out group-hover:text-text-primary">{title}</div>
             <div className="arrow">
-              <FiArrowUpRight />
+              <FiArrowUpRight className='transition duration-300 ease-in-out group-hover:text-text-primary' />
             </div>
           </h2>
           <p className="mb-2 sm:text-xl text-base">{description}</p>
           <div className="flex flex-wrap space-x-2">
             {tags.map((tag, index) => (
-              <span key={index} className="text-sm text-gray-500">
+              <span key={index} className="text-sm text-text-primary">
                 {tag}
               </span>
             ))}
@@ -43,7 +43,7 @@ const Projects = () => {
   return (
     <div className="p-2 border-b-2 border-white">
       <div className="title">
-        <p className="sm:text-4xl text-2xl font-bold">Projects</p>
+        <p className="sm:text-4xl text-2xl font-bold text-text-primary">Projects</p>
       </div>
       <div className="mt-4">
         {projects.map((project, index) => (

@@ -59,3 +59,7 @@
   z-index: 10;
   pointer-events: none;
 }
+
+/* body {
+  background: linear-gradient(#232323, #000000);
+} */
