@@ -1,12 +1,12 @@
-import Header from "@/components/Header";
-import About from "@/components/About";
-import SocialLinks from "@/components/SocialLinks";
-import Email from "@/components/Email";
-import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
-import Education from "@/components/Education";
-import { Footer } from "@/components/Footer";
-import TextSlider from "@/components/TextSlider";
+import Header from "@/app/(root)/Header";
+import About from "@/app/(root)/About";
+import SocialLinks from "@/app/(root)/SocialLinks";
+import EmailBlog from "@/app/(root)/EmailBlog";
+import Experience from "@/app/(root)/Experience";
+import Projects from "@/app/(root)/Projects";
+import Education from "@/app/(root)/Education";
+import { Footer } from "@/app/(root)/Footer";
+import TextSlider from "@/app/(root)/TextSlider";
 
 export default function Home() {
   return (
@@ -25,15 +25,15 @@ export default function Home() {
             </div>
           </div>
           <div className="h-1/4">
-            <Email />
+            <EmailBlog />
           </div>
         </div>
         <div className="lg:w-1/2 w-full lg:overflow-auto p-0">
-        <TextSlider />
-        <Experience />
-        <Projects />
-        <Education />
-        <Footer />
+          <TextSlider />
+          <Experience />
+          <Projects />
+          <Education />
+          <Footer />
         </div>
       </div>
     </main>

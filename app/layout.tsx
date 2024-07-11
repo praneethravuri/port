@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
+import CustomCursor from "@/app/(root)/CustomCursor";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={`${montserrat.className} bg-black text-white`}>
         <CustomCursor />
         {children}
-        </body>
+      </body>
     </html>
   );
 }
